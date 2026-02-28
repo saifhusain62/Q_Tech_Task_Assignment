@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Find Jobs", path: "/find-jobs" },
-    { name: "Browse Companies", path: "/browse-companies" },
+    { name: "Browse Companies", path: "/companies" },
   ];
 
   const isActive = (path) => location.pathname === path;
