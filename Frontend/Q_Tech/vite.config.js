@@ -7,11 +7,10 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-   build: {
-    // Completely disable lightningcss
-    cssMinify: 'esbuild',
+   css: {
+    transformer: 'postcss',  // Use postcss instead of lightningcss
   },
-  css: {
-    devSourcemap: true,
+  build: {
+    cssMinify: 'esbuild',    // Use esbuild for CSS minification
   }
 })
